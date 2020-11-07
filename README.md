@@ -17,12 +17,14 @@ optional arguments:
                         Цей параметр є вибірковим.
   -l, --logs            Якщо виконати команду з цим параметром будуть
                        виводитись логи.
+                       
 4. Command python3 . -o "This text ..." gave the result:
 We are in the __main__
 2020-11-07 20:16:33.526964
 linux
 З консолі було передано аргумент
  This text ...
+ 
 5. python3 . --logs message:
 2020-11-07 20:19:56,231 root INFO: Тут буде просто інформативне повідомлення
 2020-11-07 20:19:56,231 root WARNING: Це Warning повідомлення
