@@ -22,4 +22,3 @@ with open("README.md", "r") as f:
 
 x = lambda a : a + a
 print(x(3))
-

@@ -17,14 +17,20 @@ def main(text):
     print(common.get_current_platform())
     if text:
         print("З консолі було передано аргумент\n", 10*"=", f">> {text} <<", 10*"=")
+    common.Myfunction()
+    try:
+        res = common.fun_with_error()
+        logger.info('Все добре')
+    except Exception as e:
+        logger.error('Все погано:' + str(e))
 
 
+    
 def how_to_write_logs():
     logger.info("Тут буде просто інформативне повідомлення")
     logger.warning("Це Warning повідомлення")
     logger.error("Це повідомлення про помилку")
-
-
+  
 if __name__ == '__main__':
     args = parser.parse_args()
     if args.logs:
